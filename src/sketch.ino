@@ -46,7 +46,7 @@ CRGB leds[NUM_LEDS];
 #define TEMPERATURE_2 OvercastSky
 
 // How many seconds to show each temperature before switching
-#define DISPLAYTIME 200
+#define DISPLAYTIME 333
 // How many seconds to show black between switches
 #define BLACKTIME   0
 
