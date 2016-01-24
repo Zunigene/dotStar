@@ -81,6 +81,7 @@ void setup() {
   // It's important to set the color correction for your LED strip here,
   // so that colors can be more accurately rendered through the 'temperature' profiles
   FastLED.addLeds<CHIPSET, DATA_PIN, CLOCK_PIN, COLOR_ORDER>(leds, NUM_LEDS).setCorrection( TypicalSMD5050 );
+  FastLED.addLeds<APA102, 9, 8, COLOR_ORDER>(leds, NUM_LEDS).setCorrection( TypicalSMD5050 );
   FastLED.setBrightness( BRIGHTNESS );
 }
 
