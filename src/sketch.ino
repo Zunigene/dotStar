@@ -46,9 +46,9 @@ CRGB leds[NUM_LEDS];
 #define TEMPERATURE_2 OvercastSky
 
 // How many seconds to show each temperature before switching
-#define DISPLAYTIME 20
+#define DISPLAYTIME 200
 // How many seconds to show black between switches
-#define BLACKTIME   3
+#define BLACKTIME   0
 
 void loop()
 {
@@ -73,7 +73,7 @@ void loop()
   }
   
   FastLED.show();
-  FastLED.delay(8);
+  FastLED.delay(0);
 }
 
 void setup() {
